@@ -22,16 +22,14 @@ html {
 
 .nav {
     background-color: #FE9900;
-    padding: 1% 1%;
-    width: 500px;
-    max-width: 300px;
+    min-width: 10%;
+    max-width: 10%;
 }
 
 .rel-links{
     background-color:#936;
-    padding: 1% 1%;
-    width: 500px;
-    max-width: 300px;
+    min-width: 10%;
+    max-width: 10%;;
 }
 
 
@@ -56,7 +54,7 @@ html {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 .flex-container__content {
         display: flex;
         flex-direction: column;
