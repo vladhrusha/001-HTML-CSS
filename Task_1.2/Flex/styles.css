@@ -22,14 +22,17 @@ html {
 
 .nav {
     background-color: #FE9900;
-    width: 100%;
-    padding: 1.5% 1.5%;
+    padding: 1% 1%;
+    width: 500px;
+    max-width: 300px;
 }
 
 .rel-links{
     background-color:#936;
-    width: 100%;
-    padding: 1.5% 1.5%;}
+    padding: 1% 1%;
+    width: 500px;
+    max-width: 300px;
+}
 
 
 .flex-container__body {
@@ -58,6 +61,7 @@ html {
         display: flex;
         flex-direction: column;
         height: 100%;
+        max-width: 100%;
     }
     .flex-container__article {
         height: 100%;
@@ -65,5 +69,6 @@ html {
     .nav,
     .rel-links {
         height: 8%;
+        max-width: 100%;
     }
 }
