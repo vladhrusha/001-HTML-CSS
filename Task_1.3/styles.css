@@ -1,0 +1,165 @@
+:root {
+    --blue: #558193;
+    --green: #00BB92;
+    --grey-light: #D6D6D6;
+    --grey: #bab5b5;
+    --grey-dark: #666;
+    --white: #FCFCFC;
+}
+body {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+form {
+    background-color: var(--white);
+    width: 860px;
+    border-radius: 2%;
+
+}
+label {
+    color: var(--green);
+    font-size: x-large;
+    font-weight: 550;
+}
+
+input + label {
+    color: var(--grey-dark);
+    font-weight: 500;
+}
+
+
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color: var(--grey-dark);
+}
+div {
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input[type="text"]{
+    font-size: large;
+    padding: 0 10px;
+}
+
+.container input[type="text"]::placeholder {
+    color: var(--grey);
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+
+}
+.names input {
+    width: 365px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+}
+.emails {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+.emails input {
+    width: 795px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+}
+
+.passwords {
+    display: flex;
+    justify-content: center;
+}
+
+.passwords input {
+    width: 365px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+}
+
+.miscellaneous {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income select {
+    width: 365px;
+    height: 41px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+    font-size: large;
+}
+
+.income div .slider {
+    width: 310px;
+    accent-color: grey;
+    
+}
+
+.income div .slider + label {
+    background-color: #00BB92;
+    padding: 7px 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+.persona-data{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.persona-data div .ageTxtBox {
+    width: 340px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+    font-size: large;
+}
+.persona-data .input-file {
+    font-size: large;
+}
+.persona-data .input-file 
+
+
+.bio label {
+    color: red;
+}
+.bio textarea {
+    margin-left: 20px;
+    border-radius: 5px;
+    border-color: var(--grey-light);
+    width: 780px;
+    height: 100px;
+}
+
+form .submit-button input  {
+    background-color: var(--green);
+    padding: 10px 15px;
+    border-radius: 7px;
+    border-color: var(--green);
+    margin-right: 35px;
+    color: var(--white);
+    font-size: x-large;
+}
