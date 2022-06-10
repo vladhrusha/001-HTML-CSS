@@ -9,7 +9,7 @@ html {
     justify-content: center;
     font-size: x-large;
     color: white;
-    height: 10%;
+    height: 108px;
 }
 
 .header {
@@ -22,14 +22,12 @@ html {
 
 .nav {
     background-color: #FE9900;
-    min-width: 10%;
-    max-width: 10%;
+    width: 320px;
 }
 
 .rel-links{
     background-color:#936;
-    min-width: 10%;
-    max-width: 10%;;
+    width: 320px;
 }
 
 
@@ -44,29 +42,35 @@ html {
 .flex-container__content {
     display: flex;
     flex-direction: row;
-    height: 80%;
+    height: 864px;
 }
 
 .flex-container__article {
-    padding: 2% 2%;
+    padding: 20px 20px;
     display: flex;
     flex-direction: column;
+    width: 1280px;
 }
 
 
 @media only screen and (max-width: 900px) {
-.flex-container__content {
+    .flex-container__content {
         display: flex;
         flex-direction: column;
-        height: 100%;
-        max-width: 100%;
+        height: 864px;
+        max-width: 900px;
     }
+
     .flex-container__article {
         height: 100%;
     }
+
     .nav,
     .rel-links {
-        height: 8%;
-        max-width: 100%;
+        height: 80px;
+        width: auto;
+    }
+    .flex-container__article{
+        width: auto;
     }
 }
