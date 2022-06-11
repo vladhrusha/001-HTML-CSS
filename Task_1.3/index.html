@@ -109,6 +109,11 @@
                 min="1"
                 max="100"
               />
+              <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+              </form>
               <label>20k</label>
             </div>
           </div>
@@ -143,4 +148,9 @@
       </div>
     </form>
   </body>
+  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="b" name="b" value="50" /> +
+    <input type="number" id="a" name="a" value="10" /> =
+    <output name="result" for="a b">60</output>
+  </form>
 </html>
