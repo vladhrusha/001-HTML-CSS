@@ -6,21 +6,41 @@
     --grey-dark: #666;
     --white: #FCFCFC;
 }
+
 body {
     background-color: var(--blue);
     display: flex;
     justify-content: center;
 }
-form {
+.account-create {
     background-color: var(--white);
     width: 860px;
     border-radius: 2%;
 
 }
+
+.account-create div {
+    margin: 15px;
+}
+
+.account-create input[type="text"], input[type="password"], textarea {
+    border-radius: 5px;
+    border-color: var(--grey-light);
+    width: 365px;
+    height: 35px;
+    font-size: large;
+    padding: 5px 10px;
+}
+
 label {
     color: var(--green);
     font-size: x-large;
     font-weight: 550;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
 
 input + label {
@@ -29,90 +49,55 @@ input + label {
 }
 
 
-.submit-button {
-    display: flex;
-    justify-content: flex-end;
-}
 .heading {
     display: flex;
     justify-content: center;
     font-size: x-large;
     color: var(--grey-dark);
 }
-div {
-    margin: 20px;
-}
+
+
 
 .container {
     display: flex;
     flex-direction: column;
 }
 
-.container input[type="text"]{
-    font-size: large;
-    padding: 0 10px;
-}
-
-.container input[type="text"]::placeholder {
+.container input[type="text"]::placeholder,input[type="password"]::placeholder {
     color: var(--grey);
 }
 
-.names {
+.authorization-fields > div{
     display: flex;
     justify-content: center;
+}
 
-}
-.names input {
-    width: 365px;
-    height: 35px;
-    border-radius: 5px;
-    border-color: var(--grey-light);
-}
+
 .emails {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-
 }
-.emails input {
-    width: 795px;
-    height: 35px;
-    border-radius: 5px;
-    border-color: var(--grey-light);
+.emails input[type="text"] {
+    width: 780px;
 }
 
-.passwords {
-    display: flex;
-    justify-content: center;
-}
 
-.passwords input {
-    width: 365px;
-    height: 35px;
-    border-radius: 5px;
-    border-color: var(--grey-light);
-}
-
-.miscellaneous {
+.personal-info > div {
     display: flex;
     justify-content: space-between;
 }
 
-.income {
-    display: flex;
-    justify-content: space-between;
-}
 
 .income select {
-    width: 365px;
-    height: 41px;
+    width: 300px;
+    height: 35px;
     border-radius: 5px;
     border-color: var(--grey-light);
     font-size: large;
 }
 
 .income div .slider {
-    width: 310px;
+    width: 280px;
     accent-color: grey;
     
 }
@@ -124,42 +109,26 @@ div {
     border-radius: 5px;
 }
 
-.persona-data{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.persona-data div .ageTxtBox {
-    width: 340px;
-    height: 35px;
-    border-radius: 5px;
-    border-color: var(--grey-light);
+.personal-info .input-file {
     font-size: large;
 }
-.persona-data .input-file {
-    font-size: large;
-}
-.persona-data .input-file 
 
-
-.bio label {
-    color: red;
-}
 .bio textarea {
-    margin-left: 20px;
-    border-radius: 5px;
-    border-color: var(--grey-light);
-    width: 780px;
+    width: 810px;
     height: 100px;
 }
 
-form .submit-button input  {
+.submit-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.submit-button input  {
     background-color: var(--green);
     padding: 10px 15px;
     border-radius: 7px;
     border-color: var(--green);
-    margin-right: 35px;
     color: var(--white);
     font-size: x-large;
 }
