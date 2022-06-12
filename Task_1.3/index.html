@@ -94,6 +94,8 @@
           <div class="income">
             <div>
               <label>Source of Income</label>
+              <div class="break"></div>
+
               <select id="income" name="income">
                 <option value="Employed">Employed</option>
                 <option value="Scam">Scam</option>
@@ -102,19 +104,19 @@
 
             <div>
               <label>Income</label>
-              <input
-                class="slider"
-                type="range"
-                id="incomeAmount"
-                min="1"
-                max="100"
-              />
-              <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-                <input type="range" id="b" name="b" value="50" /> +
-                <input type="number" id="a" name="a" value="10" /> =
-                <output name="result" for="a b">60</output>
+              <div class="break"></div>
+
+              <form>
+                <input
+                  class="slider"
+                  oninput="result.value=parseInt(a.value) + 'K'"
+                  type="range"
+                  id="a"
+                  name="a"
+                  value="50"
+                />
+                <output name="result">50K</output>
               </form>
-              <label>20k</label>
             </div>
           </div>
 
@@ -139,18 +141,10 @@
           <label>Bio</label>
           <textarea name="bio"> </textarea>
         </div>
+        <div class="submit-button">
+          <input type="submit" value="Create" />
+        </div>
       </section>
-
-      <hr />
-
-      <div class="submit-button">
-        <input type="submit" value="Create" />
-      </div>
     </form>
   </body>
-  <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-    <input type="range" id="b" name="b" value="50" /> +
-    <input type="number" id="a" name="a" value="10" /> =
-    <output name="result" for="a b">60</output>
-  </form>
 </html>

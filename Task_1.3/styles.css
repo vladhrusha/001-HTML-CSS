@@ -56,8 +56,6 @@ input + label {
     color: var(--grey-dark);
 }
 
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -96,17 +94,23 @@ input + label {
     font-size: large;
 }
 
+.income div {
+    width: 360px;
+}
+
 .income div .slider {
     width: 280px;
     accent-color: grey;
     
 }
 
-.income div .slider + label {
+.income output {
     background-color: #00BB92;
     padding: 7px 7px;
     color: white;
     border-radius: 5px;
+    font-size: x-large;
+
 }
 
 .personal-info .input-file {
