@@ -3,7 +3,6 @@
     --yellow: #FFC503;
 }
 
-
 @keyframes food__move {
     0% {
         transform: translateX(0);
