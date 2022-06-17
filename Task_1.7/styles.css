@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.slide {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url("images/material.jpg");
+}
+.slide:nth-of-type(2) {
+    background-image: url("images/fluent.jpg");
+}
+.slide:nth-of-type(3) {
+    background-image: url("images/human-interface.jpg");
+}
+
+
+
+.nav-arrows {
+    display: flex;
+    width: 960px;
+    justify-content: space-between;
+}
+
+.nav-arrows .arrow {
+    border: solid white;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 15px;
+    margin: 0;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+.left {
+    transform: rotate(135deg);
+}
+.slide:nth-of-type(1) .arrow.left {
+    border: solid rgba(255, 255, 255, 0.5);
+    border-width: 0 8px 8px 0;
+}
+.slide:nth-of-type(3) .arrow.right {
+    border: solid rgba(255, 255, 255, 0.5);
+    border-width: 0 8px 8px 0;
+}
+
+
+.article {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.article h1 {
+    font-size: xxx-large;
+    margin: 20px 0px;
+}
+
+.article p {
+    font-size: x-large;
+}
+
+
+.nav-bullets button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: white;
+}
+
+.slide:nth-of-type(1) a:nth-of-type(1) button {
+    background-color: white;
+}
+.slide:nth-of-type(2) a:nth-of-type(2) button {
+    background-color: white;
+}
+.slide:nth-of-type(3) a:nth-of-type(3) button {
+    background-color: white;
+}
+
+.slide .nav-bullets {
+    margin: 0 0 50px 0;
+}
