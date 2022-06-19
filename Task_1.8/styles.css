@@ -1,0 +1,86 @@
+:root {
+    --blue: #4A99D3;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.start-page {
+    position: absolute;
+    width: 1440px;
+    height: 768px;
+    /* left: 1440px;
+    top: 768px; */
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo {
+    color: var(--blue);
+    font-family: 'Objective';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+}
+.nav-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 312px;
+    height: 19px;
+}
+.nav-buttons button {
+    border: 0;
+}
+.nav-buttons button:nth-of-type(1){
+    color: var(--blue);
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.intro {
+    width: 500px;
+}
+.intro h1 {
+    font-family: 'Objective';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+}
+.intro p {
+font-family: 'Objective';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 36px;
+}
+
+.download-buttons button {
+    background-color: var(--blue);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+}
+.mockup-images img:nth-of-type(1) {
+    width: 240px;
+    height: 458.39px;
+}
+.mockup-images img:nth-of-type(2) {
+    width: 280px;
+    height: 534.78px;
+}
+
+
+
+.what-to-do {
+position: absolute;
+    width: 950px;
+    height: 1175px;
+    left: 245px;
+    top: 918px;
+}
