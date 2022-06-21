@@ -2,17 +2,67 @@ $color-blue: #4A99D3;
 $font-stack: 'Objective', normal;
 
 
+
+@mixin logo {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 35px;
+}
+
+@mixin p__font--dimensions {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin p__font--dimensions--large {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+
+@mixin h1__font--dimensions {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+}
+@mixin h2__font--dimensions {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+}
+@mixin h3__font--dimensions {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 27px;
+}
+@mixin h4__font--dimensions {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+@mixin h5__font--dimensions {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+
+
+
+
 body {
     font-family: 'Objective';
     font-style: normal;
     margin: 0;
 }
 .home {
-    width: 1440px;
-    // height: 4516px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    section {
+        width: 100vw;
+    }
 }
 
 
@@ -21,25 +71,21 @@ body {
 
 
 
-.start-page {
-    width: 1440px;
-    height: 768px;
+.intro {
     display: flex;
     flex-direction: column;
 
     .nav {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin: 40px 0;
+        margin: 30px 0;
 
         .logo {
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 42px;
+            @include logo;
             color: $color-blue;
-            margin-left: 200px;
+            margin-right: 33%;
         }
 
         .buttons {
@@ -56,8 +102,7 @@ body {
                 color: $color-blue;
                 font-weight: 500;
             }
-
-            margin-right: 200px;
+            margin-right: 10%;
         }
     }
 
@@ -66,125 +111,114 @@ body {
     justify-content: center;
     align-items: center;
     }
-    .intro {
+    .article {
         display: flex;
         flex-direction: column;
-        width: 636px;
-        height: 534.78px;
+        width: 500px;
         h1 {
-            font-weight: 500;
-            font-size: 50px;
-            line-height: 70px;
+            @include h1__font--dimensions;
             margin: 0 0 20px 0;
         }
         p {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 36px;
-        }
-        button {
-            width: 180px;
-            height: 60px;
-            background-color: $color-blue;
-            border: 0px;
-            border-radius: 5px;
-            color: white;
-            font-size: large;
+            @include p__font--dimensions--large;
         }
     }
     .mockup-images{
-        // width: 441px;
         width: 525px;
-        margin: 0;
-        padding: 0;
-        img {
-            margin: 0;
-            padding: 0;
-        }
+        height: 550px;
+        position: relative;
         img:nth-of-type(1){
-            // position: absolute;
+            position: absolute;
             width: 240px;
-            // left: 913px;
-            // top: 232px;
+            height: 458px;
+            z-index: 1;
+            top: 75px;
+
         }
         img:nth-of-type(2){
-            // position: absolute;
+            position: absolute;
             width: 280px;
-            // left: 1074px;
-            // top: 158px;
+            height: 534px;
+            left: 170px;
         }
         
     }
 }
 
 
-.what-to-do {
-    width: 1440px;
-    height: 1175px;
+.use-cases {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    h2 {
-            font-weight: 500;
-            font-size: 36px;
-            line-height: 46px;
-            width: 395px;
+    justify-content: center;
+    div {
+        position: relative;
+        height: 800px;
+        width: 500px;
+    }
+    div:nth-of-type(1){
+        h2:nth-child(1){
             position: absolute;
-            left: 300px;
-            top: 0px;
+            top: 0;
+            left: 0;
         }
+        article:nth-child(2){
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+        }
+    }
+    div:nth-of-type(2){
+        article:nth-of-type(1){
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        article:nth-of-type(2){
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    h2 {
+        @include h2__font--dimensions;
+            width: 395px;
+        }
+
     article {
         display: flex;
         flex-direction: column;
         align-items: center;
 
             
-        h3 {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 30px;
-         }
+        h4 {
+            @include h4__font--dimensions;
+        }
             
-         img {
+        img {
             width: 150px;
             height: 150px
         }
             
         p {
             width: 284px;
+            @include p__font--dimensions;
         }
         span {
             color: $color-blue;
         }
     }
-    article:nth-of-type(1){
-        position:absolute;
-        right: 300px;
-        top: 50px;
-    }
-    article:nth-of-type(2) {
-        position: absolute;
-        left: 300px;
-        top: 250px;
-    }
-    article:nth-of-type(3) {
-        position: absolute;
-        right: 300px;
-        top: 500px;
-        }
+
 
 }
 
 
 
-.how-it-works {
-    width: 1440px;
+.set-up {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2 {
+    h3 {
         color: $color-blue;
+        @include h3__font--dimensions;
     }
     .container {
         display: flex;
@@ -194,16 +228,11 @@ body {
             align-items: center;
             width: 224px;
             text-align: center;
-            h3 {
-                width: 174px;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 19px;
+            h5 {
+                @include h5__font--dimensions;
             }
             p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 26px;
+                @include p__font--dimensions;
             }
         }
     }
@@ -212,11 +241,13 @@ body {
 
 
 
-.what-our-client-say {
-    width: 1440px;
+.feedback {
     display: flex;
     flex-direction: column;
     align-items: center;
+    h3 {
+        @include h3__font--dimensions;
+    }
     .container {
         display: flex;
         justify-content: space-evenly;
@@ -227,14 +258,10 @@ body {
             flex-direction: column;
             margin-left: 200px;
             p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
+                @include p__font--dimensions;
             }
-            span {
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 19px;
+            h5 {
+                @include h5__font--dimensions;
             }
         }
     }
@@ -243,42 +270,49 @@ body {
 
 
 .download {
-    width: 1440px;
     margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 458px;
     .mockup-images {
-        width: 700px;
+        width: 600px;
+        height: 450px;
+        position: relative;
         img {
             width: 180px;
         }
+        img:nth-of-type(1){
+            position: absolute;
+            left: 0;
+        }
         img:nth-of-type(2){
+            position: absolute;
+            left: 20%;
+            bottom: 10%;
             width: 240px;
+            z-index: 1;
+        }
+        img:nth-of-type(3){
+            position: absolute;
+            right: 20%;
         }
     }
     article {
         text-align: center;
         width: 444px;
         h3 {
-            font-weight: 700;
-            font-size: 25px;
-            line-height: 26px;
+            @include h3__font--dimensions;
         }
         p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-        }
+            @include p__font--dimensions;
+        }   
     }
 }
 
 
 
-.nav-footer {
-    width: 1440px;
+.footer {
     background-color: $color-blue;
     display: flex;
     flex-direction: column;
@@ -287,10 +321,8 @@ body {
     .container {
         display: flex;
         justify-content: space-evenly;
-        span {
-            font-weight: 700;
-            font-size: 34px;
-            line-height: 35px;
+        .logo {
+            @include logo;
         }
         div {
             h3 {
@@ -313,8 +345,7 @@ body {
         }
     }
 
-    .footer {
-        width: 1440px;
+    .footer-footer {
         padding: 20px 0;
         display: flex;
         border-top: solid 2px white;
