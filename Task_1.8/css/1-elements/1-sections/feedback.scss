@@ -20,10 +20,5 @@
 
         }
     }
-    @media only screen and (max-width: 960px) {
-        // for mobile
-        .container {
-            @include flex-mobile;
-        }
-    }  
+    @include media-feedback;
 }
