@@ -1,4 +1,5 @@
 @use '../../mixins.scss';
+@use '../../adaptive.scss';
 .feedback {
     display: flex;
     flex-direction: column;
@@ -28,4 +29,10 @@
             }
         }
     }
+    @media only screen and (max-width: 960px) {
+        // for mobile
+        .container {
+            @include adaptive.flex-mobile;
+       }
+    }  
 }

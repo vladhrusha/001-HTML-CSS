@@ -1,4 +1,5 @@
 @use '../../mixins.scss';
+@use '../../adaptive.scss';
 .download {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -45,5 +46,11 @@
         p {
             @include mixins.p__font--dimensions;
         }
+    }
+}
+@media only screen and (max-width: 960px) {
+    // for mobile
+    .download {
+        @include adaptive.flex-mobile;
     }
 }
