@@ -1,0 +1,47 @@
+@use '../../mixins.scss';
+.footer {
+    background-color: mixins.$color-blue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+
+        .logo {
+            @include mixins.logo;
+        }
+
+        div {
+            h3 {
+                text-decoration: underline;
+            }
+        }
+
+        form {
+            width: 394px;
+
+            input {
+                width: 268px;
+                height: 50px;
+            }
+
+            button {
+                width: 110px;
+                height: 55px;
+                background-color: white;
+                border: 0;
+                color: mixins.$color-blue;
+            }
+        }
+    }
+
+    .footer-footer {
+        padding: 20px 0;
+        display: flex;
+        border-top: solid 2px white;
+        justify-content: space-around;
+    }
+}

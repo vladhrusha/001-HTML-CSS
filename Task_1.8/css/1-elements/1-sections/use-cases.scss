@@ -1,0 +1,71 @@
+@use '../../mixins.scss';
+.use-cases {
+    display: flex;
+    justify-content: center;
+
+    div {
+        position: relative;
+        height: 800px;
+        width: 500px;
+    }
+
+    div:nth-of-type(1) {
+        h2:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        article:nth-child(2) {
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+        }
+    }
+
+    div:nth-of-type(2) {
+        article:nth-of-type(1) {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        article:nth-of-type(2) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    h2 {
+        @include mixins.h2__font--dimensions;
+        width: 395px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h4 {
+            @include mixins.h4__font--dimensions;
+        }
+
+        img {
+            width: 150px;
+            height: 150px
+        }
+
+        p {
+            width: 284px;
+            @include mixins.p__font--dimensions;
+        }
+
+        span {
+            color: mixins.$color-blue;
+        }
+    }
+
+
+}
