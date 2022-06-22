@@ -82,27 +82,27 @@
   display: flex;
   justify-content: center;
 }
-.use-cases div {
+.use-cases .section {
   position: relative;
   height: 800px;
   width: 500px;
 }
-.use-cases div:nth-of-type(1) h2:nth-child(1) {
+.use-cases .section:nth-of-type(1) h2:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
 }
-.use-cases div:nth-of-type(1) article:nth-child(2) {
+.use-cases .section:nth-of-type(1) article:nth-child(2) {
   position: absolute;
   bottom: 20%;
   left: 15%;
 }
-.use-cases div:nth-of-type(2) article:nth-of-type(1) {
+.use-cases .section:nth-of-type(2) article:nth-of-type(1) {
   position: absolute;
   right: 0;
   top: 0;
 }
-.use-cases div:nth-of-type(2) article:nth-of-type(2) {
+.use-cases .section:nth-of-type(2) article:nth-of-type(2) {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -113,27 +113,27 @@
   line-height: 46px;
   width: 395px;
 }
-.use-cases article {
+.use-cases .article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.use-cases article h4 {
+.use-cases .article h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
 }
-.use-cases article img {
+.use-cases .article img {
   width: 150px;
   height: 150px;
 }
-.use-cases article p {
+.use-cases .article p {
   width: 284px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.use-cases article span {
+.use-cases .article span {
   color: #4A99D3;
 }
 
@@ -159,19 +159,19 @@
 .set-up .container {
   display: flex;
 }
-.set-up .container article {
+.set-up .container .article {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 224px;
   text-align: center;
 }
-.set-up .container article h5 {
+.set-up .container .article h5 {
   font-weight: 500;
   font-size: 18px;
   line-height: 19px;
 }
-.set-up .container article p {
+.set-up .container .article p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -192,18 +192,18 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.feedback .container article {
+.feedback .container .article {
   width: 418px;
   display: flex;
   flex-direction: column;
   margin-left: 200px;
 }
-.feedback .container article p {
+.feedback .container .article p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.feedback .container article h5 {
+.feedback .container .article h5 {
   font-weight: 500;
   font-size: 18px;
   line-height: 19px;
@@ -247,16 +247,16 @@
   position: absolute;
   right: 20%;
 }
-.download article {
+.download .article {
   text-align: center;
   width: 444px;
 }
-.download article h3 {
+.download .article h3 {
   font-weight: 700;
   font-size: 26px;
   line-height: 27px;
 }
-.download article p {
+.download .article p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -286,17 +286,17 @@
   font-size: 34px;
   line-height: 35px;
 }
-.footer .container div h3 {
+.footer .container .nav-category h3 {
   text-decoration: underline;
 }
-.footer .container form {
+.footer .container .news-sub {
   width: 394px;
 }
-.footer .container form input {
+.footer .container .news-sub input {
   width: 268px;
   height: 50px;
 }
-.footer .container form button {
+.footer .container .news-sub button {
   width: 110px;
   height: 55px;
   background-color: white;

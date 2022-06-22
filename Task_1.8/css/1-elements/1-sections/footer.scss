@@ -14,13 +14,13 @@
             @include mixins.logo;
         }
 
-        div {
+        .nav-category {
             h3 {
                 text-decoration: underline;
             }
         }
 
-        form {
+        .news-sub {
             width: 394px;
 
             input {
