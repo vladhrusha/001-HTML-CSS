@@ -4,46 +4,51 @@
     line-height: 35px;
 }
 
-@mixin p__font--dimensions {
+@mixin p-font {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
 
-@mixin p__font--dimensions--large {
+@mixin p-font-large {
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
 }
 
 
-@mixin h1__font--dimensions {
+@mixin h1-font {
     font-weight: 500;
     font-size: 60px;
     line-height: 70px;
 }
 
-@mixin h2__font--dimensions {
+@mixin h2-font {
     font-weight: 500;
     font-size: 36px;
     line-height: 46px;
 }
 
-@mixin h3__font--dimensions {
+@mixin h3-font {
     font-weight: 700;
     font-size: 26px;
     line-height: 27px;
 }
 
-@mixin h4__font--dimensions {
+@mixin h4-font {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
 }
 
-@mixin h5__font--dimensions {
+@mixin h5-font {
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
+}
+@mixin h6-font {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
 }
 $color-blue: #4A99D3;

@@ -1,12 +1,12 @@
-@use '../../mixins.scss';
+
+@import '../../mixins.scss';
 .set-up {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h3 {
-        color: mixins.$color-blue;
-        @include mixins.h3__font--dimensions;
+    .h3 {
+        color: $color-blue;
     }
 
     .container {
@@ -19,13 +19,8 @@
             width: 224px;
             text-align: center;
 
-            h5 {
-                @include mixins.h5__font--dimensions;
-            }
 
-            p {
-                @include mixins.p__font--dimensions;
-            }
+
         }
     }
 

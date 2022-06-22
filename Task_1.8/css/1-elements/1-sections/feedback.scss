@@ -1,13 +1,10 @@
-@use '../../mixins.scss';
-@use '../../adaptive.scss';
+@import '../../adaptive.scss';
+@import '../../mixins.scss';
 .feedback {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    h3 {
-        @include mixins.h3__font--dimensions;
-    }
 
     .container {
         display: flex;
@@ -20,19 +17,13 @@
             flex-direction: column;
             margin-left: 200px;
 
-            p {
-                @include mixins.p__font--dimensions;
-            }
 
-            h5 {
-                @include mixins.h5__font--dimensions;
-            }
         }
     }
     @media only screen and (max-width: 960px) {
         // for mobile
         .container {
-            @include adaptive.flex-mobile;
-       }
+            @include flex-mobile;
+        }
     }  
 }

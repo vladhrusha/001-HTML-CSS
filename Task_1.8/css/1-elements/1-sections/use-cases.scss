@@ -1,5 +1,5 @@
-@use '../../mixins.scss';
-@use '../../adaptive.scss';
+@import '../../adaptive.scss';
+@import '../../mixins.scss';
 
 .use-cases {
     display: flex;
@@ -7,18 +7,18 @@
 
     .section {
         position: relative;
-        height: 800px;
+        height: 850px;
         width: 500px;
     }
 
     .section:nth-of-type(1) {
-        h2:nth-child(1) {
+        .h2:nth-child(1) {
             position: absolute;
             top: 0;
             left: 0;
         }
 
-        article:nth-child(2) {
+        .article:nth-child(2) {
             position: absolute;
             bottom: 20%;
             left: 15%;
@@ -26,21 +26,20 @@
     }
 
     .section:nth-of-type(2) {
-        article:nth-of-type(1) {
+        .article:nth-of-type(1) {
             position: absolute;
             right: 0;
             top: 0;
         }
 
-        article:nth-of-type(2) {
+        .article:nth-of-type(2) {
             position: absolute;
             right: 0;
             bottom: 0;
         }
     }
 
-    h2 {
-        @include mixins.h2__font--dimensions;
+    .h2 {
         width: 395px;
     }
 
@@ -50,22 +49,17 @@
         align-items: center;
 
 
-        h4 {
-            @include mixins.h4__font--dimensions;
-        }
-
-        img {
+        .image {
             width: 150px;
             height: 150px
         }
 
-        p {
+        .paragraph {
             width: 284px;
-            @include mixins.p__font--dimensions;
         }
 
-        span {
-            color: mixins.$color-blue;
+        .h6 {
+            color: $color-blue;
         }
     }
 
@@ -75,7 +69,7 @@
 
     // for mobile
     .use-cases {
-    @include adaptive.flex-mobile;
+    @include flex-mobile;
     }
 
 }
