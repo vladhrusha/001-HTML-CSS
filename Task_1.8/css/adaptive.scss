@@ -1,40 +1,8 @@
-@mixin media-feedback {
+@mixin mobile {
     @media only screen and (max-width: 960px) {
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-@mixin media-intro {
-    @media only screen and (max-width: 960px) {
-        .content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-@mixin media-download {
-    @media only screen and (max-width: 960px) {
-        .download {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-@mixin media-useCases {
-    @media only screen and (max-width: 960px) {
-        .use-cases {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

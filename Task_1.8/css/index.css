@@ -32,6 +32,14 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 960px) {
+  .intro .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .intro .article {
   display: flex;
   flex-direction: column;
@@ -63,18 +71,18 @@
   height: 534px;
   left: 170px;
 }
+
+.use-cases {
+  display: flex;
+  justify-content: center;
+}
 @media only screen and (max-width: 960px) {
-  .intro .content {
+  .use-cases {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
-
-.use-cases {
-  display: flex;
-  justify-content: center;
 }
 .use-cases .section {
   position: relative;
@@ -120,14 +128,6 @@
   color: #4A99D3;
 }
 
-@media only screen and (max-width: 960px) {
-  .use-cases {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .set-up {
   display: flex;
   flex-direction: column;
@@ -179,6 +179,14 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 960px) {
+  .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .download .mockup-images {
   width: 600px;
   height: 450px;
@@ -207,14 +215,6 @@
   width: 444px;
 }
 
-@media only screen and (max-width: 960px) {
-  .download {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .footer {
   background-color: #4A99D3;
   display: flex;
