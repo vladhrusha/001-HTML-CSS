@@ -1,0 +1,52 @@
+@import '../../adaptive.scss';
+@import '../../mixins.scss';
+.download {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include mobile;
+    .mockup-images {
+        width: 600px;
+        height: 450px;
+        position: relative;
+
+        .image {
+            width: 180px;
+        }
+
+        .image:nth-of-type(1) {
+            position: absolute;
+            left: 0;
+        }
+
+        .image:nth-of-type(2) {
+            position: absolute;
+            left: 20%;
+            bottom: 10%;
+            width: 240px;
+            z-index: 1;
+        }
+
+        .image:nth-of-type(3) {
+            position: absolute;
+            right: 20%;
+        }
+    }
+
+    .article {
+        text-align: center;
+        width: 444px;
+
+
+    }
+}
+@include media(960px) {
+    .download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

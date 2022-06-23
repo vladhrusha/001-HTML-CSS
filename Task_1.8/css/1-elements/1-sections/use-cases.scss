@@ -1,0 +1,75 @@
+@import '../../adaptive.scss';
+@import '../../mixins.scss';
+
+.use-cases {
+    display: flex;
+    justify-content: center;
+    // @include mobile;
+    .section {
+        position: relative;
+        height: 850px;
+        width: 500px;
+    }
+
+    .section:nth-of-type(1) {
+        .h2:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .article:nth-child(2) {
+            position: absolute;
+            bottom: 20%;
+            left: 15%;
+        }
+    }
+
+    .section:nth-of-type(2) {
+        .article:nth-of-type(1) {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .article:nth-of-type(2) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .h2 {
+        width: 395px;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .image {
+            width: 150px;
+            height: 150px
+        }
+
+        .paragraph {
+            width: 284px;
+        }
+
+        .h6 {
+            color: $color-blue;
+        }
+    }
+
+
+}
+@include media(960px) {
+    .use-cases {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

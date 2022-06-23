@@ -1,0 +1,90 @@
+@import '../../adaptive.scss';
+@import '../../mixins.scss';
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    .nav {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+
+        .logo {
+            color: $color-blue;
+            margin-right: 33%;
+        }
+
+
+    }
+    .buttons {
+        .nav-button {
+            border: 0;
+            background-color: white;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 19px;
+            margin-left: 20px;
+        }
+
+        .nav-button:nth-of-type(1) {
+            color: $color-blue;
+            font-weight: 500;
+        }
+
+        margin-right: 10%;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // @include mobile;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+
+        .h1 {
+            margin: 0 0 20px 0;
+        }
+
+        .paragraph--large {
+            @include p-font--large;
+        }
+    }
+
+    .mockup-images {
+        width: 525px;
+        height: 550px;
+        position: relative;
+
+        .image:nth-of-type(1) {
+            position: absolute;
+            width: 240px;
+            height: 458px;
+            z-index: 1;
+            top: 75px;
+
+        }
+
+        .image:nth-of-type(2) {
+            position: absolute;
+            width: 280px;
+            height: 534px;
+            left: 170px;
+        }
+    }
+}
+
+@include media(960px) {
+    .intro .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

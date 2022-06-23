@@ -1,0 +1,40 @@
+@import '../../mixins.scss';
+.footer {
+    background-color: $color-blue;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-category {
+        .h3 {
+            text-decoration: underline;
+        }
+    }
+    .news-sub {
+        width: 394px;
+        
+        .input-email {
+            width: 268px;
+            height: 50px;
+        }
+        
+        .button {
+            width: 110px;
+            height: 55px;
+            background-color: white;
+            border: 0;
+            color: $color-blue;
+        }
+    }
+    .footer-footer {
+        padding: 20px 0;
+        display: flex;
+        border-top: solid 2px white;
+        justify-content: space-around;
+    }
+}
