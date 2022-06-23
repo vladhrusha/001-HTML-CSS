@@ -1,8 +1,13 @@
-@mixin mobile {
-    @media only screen and (max-width: 960px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+// @mixin mobile {
+//     @media only screen and (max-width: 960px) {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+@mixin media($width) {
+    @media only screen and (max-width: $width) {
+        @content;
     }
 }

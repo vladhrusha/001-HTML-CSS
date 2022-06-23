@@ -40,7 +40,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @include mobile;
+        // @include mobile;
     }
 
     .article {
@@ -77,5 +77,14 @@
             height: 534px;
             left: 170px;
         }
+    }
+}
+
+@include media(960px) {
+    .intro .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

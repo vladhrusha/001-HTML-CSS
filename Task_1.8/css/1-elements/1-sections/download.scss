@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mobile;
+    // @include mobile;
     .mockup-images {
         width: 600px;
         height: 450px;
@@ -40,5 +40,13 @@
         width: 444px;
 
 
+    }
+}
+@include media(960px) {
+    .download {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -4,7 +4,7 @@
 .use-cases {
     display: flex;
     justify-content: center;
-    @include mobile;
+    // @include mobile;
     .section {
         position: relative;
         height: 850px;
@@ -64,4 +64,12 @@
     }
 
 
+}
+@include media(960px) {
+    .use-cases {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
